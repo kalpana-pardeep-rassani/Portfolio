@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalpana Pardeep Portfolio</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        // Tailwind Configuration
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300">
+
+    <nav class="fixed w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="flex items-center">
+                <img src="/images/Logo1.png" alt="Logo" class="h-8 md:h-10 w-auto object-contain border rounded-4xl">
+            </a>
+            
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#home" class="hover:text-blue-500">Home</a>
+                <a href="#about" class="hover:text-blue-500">About</a>
+                <a href="#projects" class="hover:text-blue-500">Projects</a>
+                <a href="#contact" class="hover:text-blue-500">Contact</a>
+            </div>
+
+            <button id="theme-toggle" class="p-2 rounded-xl bg-slate-200 dark:bg-slate-800 hover:ring-2 ring-blue-500 transition-all">
+                <span id="theme-icon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+        <div class="relative mb-8">
+            <div class="w-64 h-64 rounded-full border-4 border-blue-500 p-1">
+                <img src="images/Profile-Photo.png" alt="Profile" class="w-full h-full rounded-full object-cover">
+            </div>
+        </div>
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-4">Hi, I'm <span class="text-blue-600 font-black">Kalpana Pardeep</span></h1>
+        <p class="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mb-8">A Data Analyst skilled in Python, SQL, and BI tools, focused on solving real-world problems with data.</p>
+        <a href="https://drive.google.com/file/d/1ZSRcBLIifXMkKaGinMuPyKQrUEIudRC4/view?usp=drive_link" download class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-bold shadow-lg shadow-blue-500/30 transition-all transform hover:scale-105">
+            Download CV
+        </a>
+    </section>
+
+    <section id="about" class="py-24 px-6 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12 border-l-4 border-blue-600 pl-4">About Me</h2>
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800">
+                <h3 class="text-xl font-bold mb-6 text-blue-500 uppercase tracking-widest text-sm">Education</h3>
+                <div>
+                    <p class="font-bold">Bachelor of Computer Science</p><p class="text-slate-500 border-b pb-4">Virtual University | 2023 - 2027</p>
+
+                    <p class="font-bold pt-4">Data Analytics Professional</p><p class="text-slate-500 border-b pb-4">IBM via Coursera Jan 2024 - Feb 2025</p>
+                    
+                    <p class="font-bold pt-4">End to End Data Analytics Course</p><p class="text-slate-500">Leverify Quest Dec 2025 - Feb 2026</p>
+                </div>
+            </div>
+            <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800">
+                <h3 class="text-xl font-bold mb-6 text-blue-500 uppercase tracking-widest text-sm">Work Experience</h3>
+                <div class="space-y-3">
+                    <span class="font-bold">Data Analyst Intern at AIFactor.ca <p class="text-slate-500">Jun 2025 - Aug 2025 (2 months)</p></span>
+                    <p><br>-Assisted in data collection, cleaning, and analysis.<br>-Built reports and dashboards to track KPIs and trends.
+                       <br>-Gained practical exposure to real-world workflows. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 px-6 bg-slate-100 dark:bg-slate-900 border-t">
+        <div class="max-w-6xl mx-auto">
+
+            <!------------------------------------------ Projects ----------------------------------------->
+
+
+            <h1 class="text-3xl font-bold mb-12 text-center">Projects</h1>
+            <div class="grid md:grid-cols-3 gap-8 border-b pb-20">
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl transition-transform hover:-translate-y-2">
+                    <div class="h-40 bg-slate-200 dark:bg-slate-700 rounded-lg mb-4"><img src="/images/bi-1.jpg" alt="1" class="rounded-xl size-40 w-full"></div>
+                    <h4 class="font-bold text-lg mb-2">Overview Dashboard <br> Noble Prize Statical Data</h4>
+                    <p class="text-sm text-slate-500 mb-4">Built With (Looker Studio)</p>
+                    <span class="text-xs font-bold text-blue-500 uppercase">Project 1</span>
+                </div>
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl transition-transform hover:-translate-y-2">
+                    <div class="h-40 bg-slate-200 dark:bg-slate-700 rounded-lg mb-4"><img src="/images/bi-2.jpg" alt="1" class="rounded-xl size-40 w-full"></div>
+                    <h4 class="font-bold text-lg mb-2">Northwind Traders Business Performance</h4>
+                    <p class="text-sm text-slate-500 mb-4">Built With (Looker Studio)</p>
+                    <span class="text-xs font-bold text-blue-500 uppercase">Project 2</span>
+                </div>
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl transition-transform hover:-translate-y-2">
+                    <div class="h-40 bg-slate-200 dark:bg-slate-700 rounded-lg mb-4"><img src="/images/netflix-pbi.png" alt="1" class="rounded-xl size-40 w-full"></div>
+                    <h4 class="font-bold text-lg mb-2">Overview Dashboard <br> Netflix Clone</h4>
+                    <p class="text-sm text-slate-500 mb-4">Built With (Power BI)</p>
+                    <span class="text-xs font-bold text-blue-500 uppercase">Project 3</span>
+                </div>
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl transition-transform hover:-translate-y-2">
+                    <div class="h-40 bg-slate-200 dark:bg-slate-700 rounded-lg mb-4"><img src="/images/bi4.jpg" alt="1" class="rounded-xl size-40 w-full"></div>
+                    <h4 class="font-bold text-lg mb-2">Sales Overview Dashboard<br> Men, Beauty & Kids</h4>
+                    <p class="text-sm text-slate-500 mb-4">Built With (Power BI)</p>
+                    <span class="text-xs font-bold text-blue-500 uppercase">Project 4</span>
+                </div>
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl transition-transform hover:-translate-y-2">
+                    <div class="h-40 bg-slate-200 dark:bg-slate-700 rounded-lg mb-4"><img src="/images/bi-5.jpg" alt="1" class="rounded-xl size-40 w-full"></div>
+                    <h4 class="font-bold text-lg mb-2">Sales Overview Dashboard<br> Men's Fashion Analysis</h4>
+                    <p class="text-sm text-slate-500 mb-4">Built With (Power BI)</p>
+                    <span class="text-xs font-bold text-blue-500 uppercase">Project 5</span>
+                </div>
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl transition-transform hover:-translate-y-2">
+                    <div class="h-40 bg-slate-200 dark:bg-slate-700 rounded-lg mb-4"><img src="/images/bi-6.jpg" alt="1" class="rounded-xl size-40 w-full"></div>
+                    <h4 class="font-bold text-lg mb-2">Sales Overview Dashboard<br> Beauty & Grooming Analysis</h4>
+                    <p class="text-sm text-slate-500 mb-4">Built With (Power BI)</p>
+                    <span class="text-xs font-bold text-blue-500 uppercase">Project 6</span>
+                </div>
+            </div>
+
+                <!------------------------------------------------ Certification ------------------------------------------------------------------->
+
+                <h1 class="text-3xl font-bold mb-2 text-center mt-12">Certifications</h1>
+
+                <div class="grid md:grid-cols-3 gap-8 -scroll-pt-6 mt-12">
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl transition-transform hover:-translate-y-2">
+                    <div class="h-40 bg-slate-200 dark:bg-slate-700 rounded-lg mb-4 flex items-center justify-center"><img src="/images/1.jpg" alt="1" class="rounded-xl size-40 w-full"></div>
+                    <h4 class="font-bold text-lg mb-2">Programming for Everybody (Getting Started with Python)</h4>
+                    <p class="text-sm text-slate-500 mb-4">University of Michigan</p>
+                    <span class="text-xs font-bold text-green-500 uppercase">Certification</span>
+                </div>
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl transition-transform hover:-translate-y-2">
+                    <div class="h-40 bg-slate-200 dark:bg-slate-700 rounded-lg mb-4 flex items-center justify-center"><img src="/images/2.jpg" alt="2" class="rounded-xl size-40 w-full"></div>
+                    <h4 class="font-bold text-lg mb-2">Process Data from Dirty to Clean</h4>
+                    <p class="text-sm text-slate-500 mb-4">Google</p>
+                    <span class="text-xs font-bold text-green-500 uppercase">Certification</span>
+                </div>
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl transition-transform hover:-translate-y-2">
+                    <div class="h-40 bg-slate-200 dark:bg-slate-700 rounded-lg mb-4 flex items-center justify-center"><img src="/images/3.jpeg" alt="3" class="rounded-xl size-40 w-full"></div>
+                    <h4 class="font-bold text-lg mb-2">Understanding Basic SQL Syntax</h4>
+                    <p class="text-sm text-slate-500 mb-4">Coursera</p>
+                    <span class="text-xs font-bold text-green-500 uppercase">Certification</span>
+                </div>
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl transition-transform hover:-translate-y-2">
+                    <div class="h-40 bg-slate-200 dark:bg-slate-700 rounded-lg mb-4 flex items-center justify-center"><img src="/images/4.jpeg" alt="4" class="rounded-xl size-40 w-full"></div>
+                    <h4 class="font-bold text-lg mb-2">Python for Data Science, AI & Development</h4>
+                    <p class="text-sm text-slate-500 mb-4">IBM</p>
+                    <span class="text-xs font-bold text-green-500 uppercase">Certification</span>
+                </div>
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl transition-transform hover:-translate-y-2">
+                    <div class="h-40 bg-slate-200 dark:bg-slate-700 rounded-lg mb-4 flex items-center justify-center"><img src="/images/5.jpeg" alt="5" class="rounded-xl size-40 w-full"></div>
+                    <h4 class="font-bold text-lg mb-2">Data Analysis with Python</h4>
+                    <p class="text-sm text-slate-500 mb-4">IBM</p>
+                    <span class="text-xs font-bold text-green-500 uppercase">Certification</span>
+                </div>
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl transition-transform hover:-translate-y-2">
+                    <div class="h-40 bg-slate-200 dark:bg-slate-700 rounded-lg mb-4 flex items-center justify-center"><img src="/images/6.jpg" alt="6" class="rounded-xl size-40 w-full"></div>
+                    <h4 class="font-bold text-lg mb-2">End to End Data Analytics</h4>
+                    <p class="text-sm text-slate-500 mb-4">Leverify</p>
+                    <span class="text-xs font-bold text-green-500 uppercase">Certification</span>
+                </div>
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl transition-transform hover:-translate-y-2">
+                    <div class="h-40 bg-slate-200 dark:bg-slate-700 rounded-lg mb-4 flex items-center justify-center"><img src="/images/delote.png" alt="5" class="rounded-xl size-40 w-full"></div>
+                    <h4 class="font-bold text-lg mb-2">Data Analytics Job Simulation by Deloitte</h4>
+                    <p class="text-sm text-slate-500 mb-4">Deloitte.</p>
+                    <span class="text-xs font-bold text-green-500 uppercase">Certification</span>
+                </div>
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl transition-transform hover:-translate-y-2">
+                    <div class="h-40 bg-slate-200 dark:bg-slate-700 rounded-lg mb-4 flex items-center justify-center"><img src="/images/mce.jpeg" alt="5" class="rounded-xl size-40 w-full"></div>
+                    <h4 class="font-bold text-lg mb-2">Project: Mortage Calculator</h4>
+                    <p class="text-sm text-slate-500 mb-4">Coursera</p>
+                    <span class="text-xs font-bold text-green-500 uppercase">Certification</span>
+                </div>
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl transition-transform hover:-translate-y-2">
+                    <div class="h-40 bg-slate-200 dark:bg-slate-700 rounded-lg mb-4 flex items-center justify-center"><img src="/images/dvp.jpeg" alt="5" class="rounded-xl size-40 w-full"></div>
+                    <h4 class="font-bold text-lg mb-2">Data Visualization with Python</h4>
+                    <p class="text-sm text-slate-500 mb-4">IBM</p>
+                    <span class="text-xs font-bold text-green-500 uppercase">Certification</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 px-6 text-center max-w-4xl mx-auto">
+        <h2 class="text-4xl font-bold mb-6">Let's Work Together</h2>
+        <p class="text-slate-500 mb-10">Open to Data Analyst internships and entry-level opportunities</p>
+        <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+            <a href="mailto:hello@example.com" class="text-xl font-semibold text-blue-600 underline">kalpanapardeeprassani@gmail.com</a>
+            <span class="hidden md:block">|</span>
+            <div class="flex space-x-4">
+                <span class="p-2 bg-slate-200 dark:bg-slate-800 rounded-lg cursor-pointer hover:bg-blue-500 hover:text-white transition flex"> <a href="https://www.linkedin.com/in/kalpana-pardeep/" class="flex gap-2"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="linkedin-icon" class="h-10 flex"><p class="flex text-center items-center justify-center">LinkedIn</p></a></span>
+                <span class="p-2 bg-slate-200 dark:bg-slate-800 rounded-lg cursor-pointer hover:bg-blue-500 hover:text-white transition flex"><a href="https://github.com/kalpana-pardeep-rassani/" class="flex gap-2 w-26"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png" alt="github-icon" class="h-10 flex justify-center self-center"><p class="flex text-center items-center justify-center">GitHub</p></a></span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-sm text-slate-500 border-t border-slate-200 dark:border-slate-800">
+     © 2026 Kalpana Pardeep · Built with passion for data
+    </footer>
+
+    <script>
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const html = document.documentElement;
+
+        // Function to toggle classes and save to storage
+        function toggleTheme() {
+            if (html.classList.contains('dark')) {
+                html.classList.remove('dark');
+                localStorage.setItem('portfolio-theme', 'light');
+                themeIcon.innerText = '🌙';
+            } else {
+                html.classList.add('dark');
+                localStorage.setItem('portfolio-theme', 'dark');
+                themeIcon.innerText = '☀️';
+            }
+        }
+
+        // Check local storage on load
+        if (localStorage.getItem('portfolio-theme') === 'dark') {
+            html.classList.add('dark');
+            themeIcon.innerText = '☀️';
+        } else {
+            html.classList.remove('dark');
+            themeIcon.innerText = '🌙';
+        }
+
+        // Listen for click
+        themeToggleBtn.addEventListener('click', toggleTheme);
+    </script>
+</body>
+</html>
